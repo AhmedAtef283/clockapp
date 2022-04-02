@@ -1,11 +1,10 @@
-import 'package:first_app/defults/dio.dart';
 import 'package:first_app/layout/task1.dart';
 import 'package:flutter/material.dart';
 
 import 'layout/NewsLayout.dart';
 
 void main() {
-  DioHelper.init();
+
   runApp(const MyApp() ,
   );
 }

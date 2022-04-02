@@ -63,3 +63,36 @@ class _AlarmScreenState extends State<AlarmScreen> {
                         fallback: (context ) => null ,
           )  );
   }
+
+
+  Future ShowTime() async
+  {
+    var time = await showTimePicker(
+      context: context,
+      initialTime: TimeOfDay.now(),
+    );
+    var localizations = MaterialLocalizations.of(context);
+    localizations.formatTimeOfDay(time).toString();
+
+    print(time);
+
+
+  }
+
+  Future ShowDate() async
+  {
+    var date = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2001),
+      lastDate: DateTime(2025),
+    );
+    print(date);
+    return date.toString().substring(0, 10);
+  }
+
+
+
+
+
+}

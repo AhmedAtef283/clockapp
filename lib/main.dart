@@ -1,7 +1,9 @@
-import 'package:first_app/layout/task1.dart';
+import 'package:first_app/layout/clockapp.dart';
+import 'package:first_app/layout/masbha.dart';
+import 'package:first_app/layout/profile_home.dart';
 import 'package:flutter/material.dart';
 
-import 'layout/NewsLayout.dart';
+
 
 void main() {
 
